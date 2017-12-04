@@ -1,0 +1,194 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="win32">
+      <UniqueIdentifier>{84a8ebd7-7cf0-47f6-b75e-d441df67da40}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="resource">
+      <UniqueIdentifier>{715254bc-d70b-4ec5-bf29-467dd3ace079}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{bb6c862e-70e9-49d9-81b7-3829a6f50471}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\_framework">
+      <UniqueIdentifier>{9558867f-0d48-4614-9cc3-5d8337c06a3d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\GameObjects">
+      <UniqueIdentifier>{75f1a78c-11eb-4960-ae2f-f422a23a5294}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\GameLayers">
+      <UniqueIdentifier>{2ea9d396-ea9b-4a97-8590-09583a8fb7c2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Cameras">
+      <UniqueIdentifier>{e33c695e-2507-4362-8ddc-dd7e49109514}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\ObjectPools">
+      <UniqueIdentifier>{e6a1f91f-664d-434b-99dd-36c6010902de}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>win32</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\AppDelegate.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\HelloWorldScene.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\_Framework\CCF_Sprite.cpp">
+      <Filter>src\_framework</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\_Framework\CCF_SpriteSheet.cpp">
+      <Filter>src\_framework</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\GameObjects\Player.cpp">
+      <Filter>src\GameObjects</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\GameLayers\GameplayLayer.cpp">
+      <Filter>src\GameLayers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\GameLayers\GameEndLayer.cpp">
+      <Filter>src\GameLayers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\_Framework\CCF_OrthoCamera.cpp">
+      <Filter>src\_framework</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\GameLayers\MainMenuLayer.cpp">
+      <Filter>src\GameLayers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\GameUtils.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Cameras\CameraGameplay.cpp">
+      <Filter>src\Cameras</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Cameras\CameraGUI.cpp">
+      <Filter>src\Cameras</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\GameObjects\Obstacle.cpp">
+      <Filter>src\GameObjects</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\ObjectPools\ObstaclePool.cpp">
+      <Filter>src\ObjectPools</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\GameObjects\UpSpeedPickup.cpp">
+      <Filter>src\GameObjects</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\_Framework\CCF_GameObject.cpp">
+      <Filter>src\_framework</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\GameObjects\Brush.cpp">
+      <Filter>src\GameObjects</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\GameObjects\BrushDot.cpp">
+      <Filter>src\GameObjects</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\ObjectPools\UpSpeedPickupPool.cpp">
+      <Filter>src\ObjectPools</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\_Framework\CCF_Utils.cpp">
+      <Filter>src\_framework</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\GameLayers\HUDLayer.cpp">
+      <Filter>src\GameLayers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\_Framework\CCF_Label.cpp">
+      <Filter>src\_framework</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\GameObjects\CoinPickup.cpp">
+      <Filter>src\GameObjects</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\ObjectPools\CoinPickupPool.cpp">
+      <Filter>src\ObjectPools</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="main.h">
+      <Filter>win32</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\AppDelegate.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\HelloWorldScene.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\_Framework\CCF_Sprite.h">
+      <Filter>src\_framework</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\_Framework\CCF_SpriteSheet.h">
+      <Filter>src\_framework</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\_Framework\CCF_Utils.h">
+      <Filter>src\_framework</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\GameObjects\Player.h">
+      <Filter>src\GameObjects</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\GameLayers\GameplayLayer.h">
+      <Filter>src\GameLayers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\GameLayers\GameEndLayer.h">
+      <Filter>src\GameLayers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\GameUtils.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\_Framework\CCF_OrthoCamera.h">
+      <Filter>src\_framework</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\GameLayers\MainMenuLayer.h">
+      <Filter>src\GameLayers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\_Framework\CCF_PhysicsBodyConfigs.h">
+      <Filter>src\_framework</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Cameras\CameraGameplay.h">
+      <Filter>src\Cameras</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Cameras\CameraGUI.h">
+      <Filter>src\Cameras</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\GameObjects\Obstacle.h">
+      <Filter>src\GameObjects</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\_Framework\CCF_ObjectPool.h">
+      <Filter>src\_framework</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\ObjectPools\ObstaclePool.h">
+      <Filter>src\ObjectPools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\GameObjects\UpSpeedPickup.h">
+      <Filter>src\GameObjects</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\_Framework\CCF_GameObject.h">
+      <Filter>src\_framework</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\GameObjects\Brush.h">
+      <Filter>src\GameObjects</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\GameObjects\BrushDot.h">
+      <Filter>src\GameObjects</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\ObjectPools\UpSpeedPickupPool.h">
+      <Filter>src\ObjectPools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\GameLayers\HUDLayer.h">
+      <Filter>src\GameLayers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\_Framework\CCF_Label.h">
+      <Filter>src\_framework</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\GameObjects\CoinPickup.h">
+      <Filter>src\GameObjects</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\ObjectPools\CoinPickupPool.h">
+      <Filter>src\ObjectPools</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="game.rc">
+      <Filter>resource</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>
