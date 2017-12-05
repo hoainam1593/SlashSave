@@ -36,12 +36,6 @@
     <ClCompile Include="..\Classes\HelloWorldScene.cpp">
       <Filter>src</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\_Framework\CCF_Sprite.cpp">
-      <Filter>src\_framework</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\_Framework\CCF_SpriteSheet.cpp">
-      <Filter>src\_framework</Filter>
-    </ClCompile>
     <ClCompile Include="..\Classes\GameObjects\Player.cpp">
       <Filter>src\GameObjects</Filter>
     </ClCompile>
@@ -50,9 +44,6 @@
     </ClCompile>
     <ClCompile Include="..\Classes\GameLayers\GameEndLayer.cpp">
       <Filter>src\GameLayers</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\_Framework\CCF_OrthoCamera.cpp">
-      <Filter>src\_framework</Filter>
     </ClCompile>
     <ClCompile Include="..\Classes\GameLayers\MainMenuLayer.cpp">
       <Filter>src\GameLayers</Filter>
@@ -75,9 +66,6 @@
     <ClCompile Include="..\Classes\GameObjects\UpSpeedPickup.cpp">
       <Filter>src\GameObjects</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\_Framework\CCF_GameObject.cpp">
-      <Filter>src\_framework</Filter>
-    </ClCompile>
     <ClCompile Include="..\Classes\GameObjects\Brush.cpp">
       <Filter>src\GameObjects</Filter>
     </ClCompile>
@@ -87,20 +75,32 @@
     <ClCompile Include="..\Classes\ObjectPools\UpSpeedPickupPool.cpp">
       <Filter>src\ObjectPools</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\_Framework\CCF_Utils.cpp">
-      <Filter>src\_framework</Filter>
-    </ClCompile>
     <ClCompile Include="..\Classes\GameLayers\HUDLayer.cpp">
       <Filter>src\GameLayers</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\_Framework\CCF_Label.cpp">
-      <Filter>src\_framework</Filter>
     </ClCompile>
     <ClCompile Include="..\Classes\GameObjects\CoinPickup.cpp">
       <Filter>src\GameObjects</Filter>
     </ClCompile>
     <ClCompile Include="..\Classes\ObjectPools\CoinPickupPool.cpp">
       <Filter>src\ObjectPools</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Cocos2dxFramework\CCF_GameObject.cpp">
+      <Filter>src\_framework</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Cocos2dxFramework\CCF_Label.cpp">
+      <Filter>src\_framework</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Cocos2dxFramework\CCF_OrthoCamera.cpp">
+      <Filter>src\_framework</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Cocos2dxFramework\CCF_Sprite.cpp">
+      <Filter>src\_framework</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Cocos2dxFramework\CCF_SpriteSheet.cpp">
+      <Filter>src\_framework</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Cocos2dxFramework\CCF_Utils.cpp">
+      <Filter>src\_framework</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -112,15 +112,6 @@
     </ClInclude>
     <ClInclude Include="..\Classes\HelloWorldScene.h">
       <Filter>src</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\_Framework\CCF_Sprite.h">
-      <Filter>src\_framework</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\_Framework\CCF_SpriteSheet.h">
-      <Filter>src\_framework</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\_Framework\CCF_Utils.h">
-      <Filter>src\_framework</Filter>
     </ClInclude>
     <ClInclude Include="..\Classes\GameObjects\Player.h">
       <Filter>src\GameObjects</Filter>
@@ -134,14 +125,8 @@
     <ClInclude Include="..\Classes\GameUtils.h">
       <Filter>src</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\_Framework\CCF_OrthoCamera.h">
-      <Filter>src\_framework</Filter>
-    </ClInclude>
     <ClInclude Include="..\Classes\GameLayers\MainMenuLayer.h">
       <Filter>src\GameLayers</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\_Framework\CCF_PhysicsBodyConfigs.h">
-      <Filter>src\_framework</Filter>
     </ClInclude>
     <ClInclude Include="..\Classes\Cameras\CameraGameplay.h">
       <Filter>src\Cameras</Filter>
@@ -152,17 +137,11 @@
     <ClInclude Include="..\Classes\GameObjects\Obstacle.h">
       <Filter>src\GameObjects</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\_Framework\CCF_ObjectPool.h">
-      <Filter>src\_framework</Filter>
-    </ClInclude>
     <ClInclude Include="..\Classes\ObjectPools\ObstaclePool.h">
       <Filter>src\ObjectPools</Filter>
     </ClInclude>
     <ClInclude Include="..\Classes\GameObjects\UpSpeedPickup.h">
       <Filter>src\GameObjects</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\_Framework\CCF_GameObject.h">
-      <Filter>src\_framework</Filter>
     </ClInclude>
     <ClInclude Include="..\Classes\GameObjects\Brush.h">
       <Filter>src\GameObjects</Filter>
@@ -176,14 +155,35 @@
     <ClInclude Include="..\Classes\GameLayers\HUDLayer.h">
       <Filter>src\GameLayers</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\_Framework\CCF_Label.h">
-      <Filter>src\_framework</Filter>
-    </ClInclude>
     <ClInclude Include="..\Classes\GameObjects\CoinPickup.h">
       <Filter>src\GameObjects</Filter>
     </ClInclude>
     <ClInclude Include="..\Classes\ObjectPools\CoinPickupPool.h">
       <Filter>src\ObjectPools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Cocos2dxFramework\CCF_GameObject.h">
+      <Filter>src\_framework</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Cocos2dxFramework\CCF_Label.h">
+      <Filter>src\_framework</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Cocos2dxFramework\CCF_ObjectPool.h">
+      <Filter>src\_framework</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Cocos2dxFramework\CCF_OrthoCamera.h">
+      <Filter>src\_framework</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Cocos2dxFramework\CCF_PhysicsBodyConfigs.h">
+      <Filter>src\_framework</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Cocos2dxFramework\CCF_Sprite.h">
+      <Filter>src\_framework</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Cocos2dxFramework\CCF_SpriteSheet.h">
+      <Filter>src\_framework</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Cocos2dxFramework\CCF_Utils.h">
+      <Filter>src\_framework</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
