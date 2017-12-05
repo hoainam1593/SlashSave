@@ -25,15 +25,15 @@
     <Filter Include="src\ObjectPools">
       <UniqueIdentifier>{e6a1f91f-664d-434b-99dd-36c6010902de}</UniqueIdentifier>
     </Filter>
+    <Filter Include="src\GameScenes">
+      <UniqueIdentifier>{0b0a1249-11a4-4ce5-a6b2-ed042af5c96a}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
       <Filter>win32</Filter>
     </ClCompile>
     <ClCompile Include="..\Classes\AppDelegate.cpp">
-      <Filter>src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\Classes\HelloWorldScene.cpp">
       <Filter>src</Filter>
     </ClCompile>
     <ClCompile Include="..\Classes\GameObjects\Player.cpp">
@@ -43,9 +43,6 @@
       <Filter>src\GameLayers</Filter>
     </ClCompile>
     <ClCompile Include="..\Classes\GameLayers\GameEndLayer.cpp">
-      <Filter>src\GameLayers</Filter>
-    </ClCompile>
-    <ClCompile Include="..\Classes\GameLayers\MainMenuLayer.cpp">
       <Filter>src\GameLayers</Filter>
     </ClCompile>
     <ClCompile Include="..\Classes\GameUtils.cpp">
@@ -102,15 +99,18 @@
     <ClCompile Include="..\..\Cocos2dxFramework\CCF_Utils.cpp">
       <Filter>src\_framework</Filter>
     </ClCompile>
+    <ClCompile Include="..\Classes\GameScenes\GameplayScene.cpp">
+      <Filter>src\GameScenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\GameScenes\MainMenuScene.cpp">
+      <Filter>src\GameScenes</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="main.h">
       <Filter>win32</Filter>
     </ClInclude>
     <ClInclude Include="..\Classes\AppDelegate.h">
-      <Filter>src</Filter>
-    </ClInclude>
-    <ClInclude Include="..\Classes\HelloWorldScene.h">
       <Filter>src</Filter>
     </ClInclude>
     <ClInclude Include="..\Classes\GameObjects\Player.h">
@@ -124,9 +124,6 @@
     </ClInclude>
     <ClInclude Include="..\Classes\GameUtils.h">
       <Filter>src</Filter>
-    </ClInclude>
-    <ClInclude Include="..\Classes\GameLayers\MainMenuLayer.h">
-      <Filter>src\GameLayers</Filter>
     </ClInclude>
     <ClInclude Include="..\Classes\Cameras\CameraGameplay.h">
       <Filter>src\Cameras</Filter>
@@ -184,6 +181,12 @@
     </ClInclude>
     <ClInclude Include="..\..\Cocos2dxFramework\CCF_Utils.h">
       <Filter>src\_framework</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\GameScenes\GameplayScene.h">
+      <Filter>src\GameScenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\GameScenes\MainMenuScene.h">
+      <Filter>src\GameScenes</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

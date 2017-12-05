@@ -67,7 +67,7 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LibraryPath>$(MSBuildProgramFiles32)\Microsoft SDKs\Windows\v7.1A\lib;$(LibraryPath)</LibraryPath>
-    <IncludePath>../../Cocos2dxFramework;../Classes/GameObjects;../Classes/GameLayers;../Classes/Cameras;../Classes/ObjectPools;$(IncludePath)</IncludePath>
+    <IncludePath>../../Cocos2dxFramework;../Classes/GameObjects;../Classes/GameLayers;../Classes/Cameras;../Classes/ObjectPools;../Classes/GameScenes;$(IncludePath)</IncludePath>
     <TargetName>_$(ProjectName)</TargetName>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -161,15 +161,15 @@ xcopy "$(ProjectDir)..\Resources" "$(OutDir)" /D /E /I /F /Y
     <ClCompile Include="..\Classes\GameLayers\GameEndLayer.cpp" />
     <ClCompile Include="..\Classes\GameLayers\GameplayLayer.cpp" />
     <ClCompile Include="..\Classes\GameLayers\HUDLayer.cpp" />
-    <ClCompile Include="..\Classes\GameLayers\MainMenuLayer.cpp" />
     <ClCompile Include="..\Classes\GameObjects\Brush.cpp" />
     <ClCompile Include="..\Classes\GameObjects\BrushDot.cpp" />
     <ClCompile Include="..\Classes\GameObjects\CoinPickup.cpp" />
     <ClCompile Include="..\Classes\GameObjects\Obstacle.cpp" />
     <ClCompile Include="..\Classes\GameObjects\Player.cpp" />
     <ClCompile Include="..\Classes\GameObjects\UpSpeedPickup.cpp" />
+    <ClCompile Include="..\Classes\GameScenes\GameplayScene.cpp" />
+    <ClCompile Include="..\Classes\GameScenes\MainMenuScene.cpp" />
     <ClCompile Include="..\Classes\GameUtils.cpp" />
-    <ClCompile Include="..\Classes\HelloWorldScene.cpp" />
     <ClCompile Include="..\Classes\ObjectPools\CoinPickupPool.cpp" />
     <ClCompile Include="..\Classes\ObjectPools\ObstaclePool.cpp" />
     <ClCompile Include="..\Classes\ObjectPools\UpSpeedPickupPool.cpp" />
@@ -190,15 +190,15 @@ xcopy "$(ProjectDir)..\Resources" "$(OutDir)" /D /E /I /F /Y
     <ClInclude Include="..\Classes\GameLayers\GameEndLayer.h" />
     <ClInclude Include="..\Classes\GameLayers\GameplayLayer.h" />
     <ClInclude Include="..\Classes\GameLayers\HUDLayer.h" />
-    <ClInclude Include="..\Classes\GameLayers\MainMenuLayer.h" />
     <ClInclude Include="..\Classes\GameObjects\Brush.h" />
     <ClInclude Include="..\Classes\GameObjects\BrushDot.h" />
     <ClInclude Include="..\Classes\GameObjects\CoinPickup.h" />
     <ClInclude Include="..\Classes\GameObjects\Obstacle.h" />
     <ClInclude Include="..\Classes\GameObjects\Player.h" />
     <ClInclude Include="..\Classes\GameObjects\UpSpeedPickup.h" />
+    <ClInclude Include="..\Classes\GameScenes\GameplayScene.h" />
+    <ClInclude Include="..\Classes\GameScenes\MainMenuScene.h" />
     <ClInclude Include="..\Classes\GameUtils.h" />
-    <ClInclude Include="..\Classes\HelloWorldScene.h" />
     <ClInclude Include="..\Classes\ObjectPools\CoinPickupPool.h" />
     <ClInclude Include="..\Classes\ObjectPools\ObstaclePool.h" />
     <ClInclude Include="..\Classes\ObjectPools\UpSpeedPickupPool.h" />

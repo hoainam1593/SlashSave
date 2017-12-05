@@ -2,7 +2,7 @@
 #include "Player.h"
 #include "GameUtils.h"
 #include "CameraGameplay.h"
-#include "HelloWorldScene.h"
+#include "GameplayScene.h"
 #include "UpSpeedPickup.h"
 
 using namespace cocos2d;
@@ -134,7 +134,7 @@ bool Player::OnCollideWith(cocos2d::PhysicsBody* other)
 
 void Player::OnEndGame()
 {
-	HelloWorld::GetInstance()->EndGame();
+	GameplayScene::GetInstance()->EndGame();
 }
 
 void Player::OnGetUpSpeedPickup()
