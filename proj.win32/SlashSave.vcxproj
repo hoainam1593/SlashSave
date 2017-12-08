@@ -161,6 +161,7 @@ xcopy "$(ProjectDir)..\Resources" "$(OutDir)" /D /E /I /F /Y
     <ClCompile Include="..\Classes\GameLayers\GameEndLayer.cpp" />
     <ClCompile Include="..\Classes\GameLayers\GameplayLayer.cpp" />
     <ClCompile Include="..\Classes\GameLayers\HUDLayer.cpp" />
+    <ClCompile Include="..\Classes\GameObjects\BackgroundTile.cpp" />
     <ClCompile Include="..\Classes\GameObjects\Brush.cpp" />
     <ClCompile Include="..\Classes\GameObjects\BrushDot.cpp" />
     <ClCompile Include="..\Classes\GameObjects\CoinPickup.cpp" />
@@ -170,6 +171,7 @@ xcopy "$(ProjectDir)..\Resources" "$(OutDir)" /D /E /I /F /Y
     <ClCompile Include="..\Classes\GameScenes\GameplayScene.cpp" />
     <ClCompile Include="..\Classes\GameScenes\MainMenuScene.cpp" />
     <ClCompile Include="..\Classes\GameUtils.cpp" />
+    <ClCompile Include="..\Classes\ObjectPools\BackgroundTilePool.cpp" />
     <ClCompile Include="..\Classes\ObjectPools\CoinPickupPool.cpp" />
     <ClCompile Include="..\Classes\ObjectPools\ObstaclePool.cpp" />
     <ClCompile Include="..\Classes\ObjectPools\UpSpeedPickupPool.cpp" />
@@ -190,6 +192,7 @@ xcopy "$(ProjectDir)..\Resources" "$(OutDir)" /D /E /I /F /Y
     <ClInclude Include="..\Classes\GameLayers\GameEndLayer.h" />
     <ClInclude Include="..\Classes\GameLayers\GameplayLayer.h" />
     <ClInclude Include="..\Classes\GameLayers\HUDLayer.h" />
+    <ClInclude Include="..\Classes\GameObjects\BackgroundTile.h" />
     <ClInclude Include="..\Classes\GameObjects\Brush.h" />
     <ClInclude Include="..\Classes\GameObjects\BrushDot.h" />
     <ClInclude Include="..\Classes\GameObjects\CoinPickup.h" />
@@ -199,6 +202,7 @@ xcopy "$(ProjectDir)..\Resources" "$(OutDir)" /D /E /I /F /Y
     <ClInclude Include="..\Classes\GameScenes\GameplayScene.h" />
     <ClInclude Include="..\Classes\GameScenes\MainMenuScene.h" />
     <ClInclude Include="..\Classes\GameUtils.h" />
+    <ClInclude Include="..\Classes\ObjectPools\BackgroundTilePool.h" />
     <ClInclude Include="..\Classes\ObjectPools\CoinPickupPool.h" />
     <ClInclude Include="..\Classes\ObjectPools\ObstaclePool.h" />
     <ClInclude Include="..\Classes\ObjectPools\UpSpeedPickupPool.h" />

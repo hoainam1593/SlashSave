@@ -1,6 +1,7 @@
 
 #include "UpSpeedPickupPool.h"
 #include "CameraGameplay.h"
+#include "GameUtils.h"
 
 using namespace cocos2d;
 using namespace SlashSave;
@@ -9,7 +10,7 @@ bool UpSpeedPickupPool::Init(cocos2d::Node* parent)
 {
 	this->schedule(schedule_selector(UpSpeedPickupPool::AddAPickup), UP_SPEED_PICKUP_SPAWNING_RATE);
 
-	return CCF_ObjectPool<UpSpeedPickup>::Init(parent, UP_SPEED_PICKUP_POOL_SIZE);
+	return CCF_ObjectPool<UpSpeedPickup>::Init(GAMEPLAY_LOCAL_Z_GAME_OBJECT, parent, UP_SPEED_PICKUP_POOL_SIZE);
 }
 
 void UpSpeedPickupPool::DoAddObject(UpSpeedPickup* obj)

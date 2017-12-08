@@ -1,6 +1,7 @@
 
 #include "CoinPickupPool.h"
 #include "CameraGameplay.h"
+#include "GameUtils.h"
 
 using namespace cocos2d;
 using namespace SlashSave;
@@ -9,7 +10,7 @@ bool CoinPickupPool::Init(cocos2d::Node* parent)
 {
 	this->schedule(schedule_selector(CoinPickupPool::AddAPickup), COIN_PICKUP_SPAWNING_RATE);
 
-	return CCF_ObjectPool<CoinPickup>::Init(parent, COIN_PICKUP_POOL_SIZE);
+	return CCF_ObjectPool<CoinPickup>::Init(GAMEPLAY_LOCAL_Z_GAME_OBJECT, parent, COIN_PICKUP_POOL_SIZE);
 }
 
 void CoinPickupPool::DoAddObject(CoinPickup* obj)

@@ -258,7 +258,7 @@ void MainMenuScene::InitGUIWidgets()
 		flare->SetRotSpeed(speeds[0]);
 		flare->SetPosition(CCF_Vec2(0, 0), CCF_ANCHOR_CENTER);
 
-		for (int i = 1; i < speeds.size(); i++)
+		for (size_t i = 1; i < speeds.size(); i++)
 		{
 			auto clone = (Flare*)flare->Clone();
 			clone->SetRotSpeed(speeds[i]);

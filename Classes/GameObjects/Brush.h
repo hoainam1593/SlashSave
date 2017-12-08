@@ -13,6 +13,7 @@ namespace SlashSave
 	public:
 		CCF_GAME_OBJECT_CREATE_FUNC(Brush)
 
+		bool Init(cocos2d::Node* parent);
 		void update(float dt);
 		void OnMouseMoveWhileLeftBtnPressed(const CCF_Vec2& mousePos);
 

@@ -1,6 +1,7 @@
 
 #include "ObstaclePool.h"
 #include "CameraGameplay.h"
+#include "GameUtils.h"
 
 using namespace cocos2d;
 using namespace SlashSave;
@@ -9,7 +10,7 @@ bool ObstaclePool::Init(cocos2d::Node* parent)
 {
 	this->schedule(schedule_selector(ObstaclePool::AddAnObstacle), OBSTACLES_SPAWNING_RATE);
 
-	return CCF_ObjectPool<Obstacle>::Init(parent, OBSTACLES_POOL_SIZE);
+	return CCF_ObjectPool<Obstacle>::Init(GAMEPLAY_LOCAL_Z_GAME_OBJECT, parent, OBSTACLES_POOL_SIZE);
 }
 
 void ObstaclePool::DoAddObject(Obstacle* obj)

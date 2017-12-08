@@ -32,7 +32,7 @@ bool Player::Init(cocos2d::Node* parent)
 {
 	auto mat = PhysicsMaterial(0, PLAYER_BOUNCING_AMOUNT, 0);
 
-	CCF_Sprite::Init(PLAYER_SPRITE_FILE_NAME, 0, CCF_ANCHOR_CENTER, parent);
+	CCF_Sprite::Init(PLAYER_SPRITE_FILE_NAME, GAMEPLAY_LOCAL_Z_GAME_OBJECT, CCF_ANCHOR_CENTER, parent);
 
 	SetPosition(CCF_Vec2(0, 0), CCF_ANCHOR_CENTER);
 	CreateCircleBody(PLAYER_BODY_RADIUS, true, &mat, PLAYER_MAX_MOVE_SPEED, GAME_OBJECT_TAG_PLAYER);

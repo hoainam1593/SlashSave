@@ -15,6 +15,13 @@ namespace SlashSave
 		GAME_OBJECT_TAG_COIN_PICKUP
 	};
 
+	enum
+	{
+		GAMEPLAY_LOCAL_Z_BACKGROUND,
+		GAMEPLAY_LOCAL_Z_GAME_OBJECT,
+		GAMEPLAY_LOCAL_Z_BRUSHES
+	};
+
 	bool IsInScreen(const CCF_Vec2& worldCoord);
 }
 

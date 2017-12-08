@@ -6,6 +6,11 @@
 using namespace cocos2d;
 using namespace SlashSave;
 
+bool Brush::Init(cocos2d::Node* parent)
+{
+	return CCF_GameObject::Init(GAMEPLAY_LOCAL_Z_BRUSHES, parent);
+}
+
 void Brush::update(float dt)
 {
 	auto sz = m_brushDots.size();

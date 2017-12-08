@@ -105,6 +105,12 @@
     <ClCompile Include="..\Classes\GameScenes\MainMenuScene.cpp">
       <Filter>src\GameScenes</Filter>
     </ClCompile>
+    <ClCompile Include="..\Classes\GameObjects\BackgroundTile.cpp">
+      <Filter>src\GameObjects</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\ObjectPools\BackgroundTilePool.cpp">
+      <Filter>src\ObjectPools</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="main.h">
@@ -187,6 +193,12 @@
     </ClInclude>
     <ClInclude Include="..\Classes\GameScenes\MainMenuScene.h">
       <Filter>src\GameScenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\GameObjects\BackgroundTile.h">
+      <Filter>src\GameObjects</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\ObjectPools\BackgroundTilePool.h">
+      <Filter>src\ObjectPools</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
