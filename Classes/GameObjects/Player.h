@@ -7,12 +7,6 @@
 namespace SlashSave
 {
 
-#define PLAYER_SPRITE_FILE_NAME "character.png"
-#define PLAYER_BODY_RADIUS 24
-#define PLAYER_MAX_MOVE_SPEED 80
-#define PLAYER_BOUNCING_AMOUNT 10
-#define PLAYER_DISTANCE_MODIFIER 100.0f
-
 	class Player : public CCF_Sprite
 	{
 	public:

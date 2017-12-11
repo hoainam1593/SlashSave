@@ -8,9 +8,6 @@
 namespace SlashSave
 {
 
-#define OBSTACLES_SPAWNING_RATE 2
-#define OBSTACLES_POOL_SIZE 5
-
 	class ObstaclePool : public CCF_ObjectPool<Obstacle>
 	{
 	public:

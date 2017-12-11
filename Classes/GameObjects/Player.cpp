@@ -4,9 +4,19 @@
 #include "CameraGameplay.h"
 #include "GameplayScene.h"
 #include "UpSpeedPickup.h"
+#include "CCF_SpriteSheet.h"
 
 using namespace cocos2d;
 using namespace SlashSave;
+using namespace std;
+
+#define PLAYER_SPRITE_FILE_NAME "sprites/gameplay/bubbles.png"
+#define PLAYER_PLIST_FILE_NAME "sprites/gameplay/bubbles.plist"
+#define PLAYER_FRAME_NAME "ball_1_blue.png"
+#define PLAYER_BODY_RADIUS 25
+#define PLAYER_MAX_MOVE_SPEED 80
+#define PLAYER_BOUNCING_AMOUNT 10
+#define PLAYER_DISTANCE_MODIFIER 100.0f
 
 Player* Player::s_instance = nullptr;
 
@@ -30,10 +40,16 @@ Player::Player()
 
 bool Player::Init(cocos2d::Node* parent)
 {
+	// Init sprite.
+	{
+		vector<CCF_String> frameNames = { PLAYER_FRAME_NAME };
+		auto spriteSheet = CCF_SpriteSheet::Create(PLAYER_SPRITE_FILE_NAME, PLAYER_PLIST_FILE_NAME, frameNames, GAMEPLAY_LOCAL_Z_GAME_OBJECT, parent);
+
+		CCF_Sprite::Init(spriteSheet, PLAYER_FRAME_NAME, 0, CCF_ANCHOR_CENTER, spriteSheet);
+	}
+
+	// Config sprite.
 	auto mat = PhysicsMaterial(0, PLAYER_BOUNCING_AMOUNT, 0);
-
-	CCF_Sprite::Init(PLAYER_SPRITE_FILE_NAME, GAMEPLAY_LOCAL_Z_GAME_OBJECT, CCF_ANCHOR_CENTER, parent);
-
 	SetPosition(CCF_Vec2(0, 0), CCF_ANCHOR_CENTER);
 	CreateCircleBody(PLAYER_BODY_RADIUS, true, &mat, PLAYER_MAX_MOVE_SPEED, GAME_OBJECT_TAG_PLAYER);
 

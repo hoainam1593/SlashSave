@@ -111,6 +111,12 @@
     <ClCompile Include="..\Classes\ObjectPools\BackgroundTilePool.cpp">
       <Filter>src\ObjectPools</Filter>
     </ClCompile>
+    <ClCompile Include="..\Classes\GameScenes\TestScene.cpp">
+      <Filter>src\GameScenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Cocos2dxFramework\CCF_SpriteAnim.cpp">
+      <Filter>src\_framework</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="main.h">
@@ -199,6 +205,12 @@
     </ClInclude>
     <ClInclude Include="..\Classes\ObjectPools\BackgroundTilePool.h">
       <Filter>src\ObjectPools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\GameScenes\TestScene.h">
+      <Filter>src\GameScenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Cocos2dxFramework\CCF_SpriteAnim.h">
+      <Filter>src\_framework</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

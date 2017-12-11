@@ -153,6 +153,7 @@ xcopy "$(ProjectDir)..\Resources" "$(OutDir)" /D /E /I /F /Y
     <ClCompile Include="..\..\Cocos2dxFramework\CCF_Label.cpp" />
     <ClCompile Include="..\..\Cocos2dxFramework\CCF_OrthoCamera.cpp" />
     <ClCompile Include="..\..\Cocos2dxFramework\CCF_Sprite.cpp" />
+    <ClCompile Include="..\..\Cocos2dxFramework\CCF_SpriteAnim.cpp" />
     <ClCompile Include="..\..\Cocos2dxFramework\CCF_SpriteSheet.cpp" />
     <ClCompile Include="..\..\Cocos2dxFramework\CCF_Utils.cpp" />
     <ClCompile Include="..\Classes\AppDelegate.cpp" />
@@ -170,6 +171,7 @@ xcopy "$(ProjectDir)..\Resources" "$(OutDir)" /D /E /I /F /Y
     <ClCompile Include="..\Classes\GameObjects\UpSpeedPickup.cpp" />
     <ClCompile Include="..\Classes\GameScenes\GameplayScene.cpp" />
     <ClCompile Include="..\Classes\GameScenes\MainMenuScene.cpp" />
+    <ClCompile Include="..\Classes\GameScenes\TestScene.cpp" />
     <ClCompile Include="..\Classes\GameUtils.cpp" />
     <ClCompile Include="..\Classes\ObjectPools\BackgroundTilePool.cpp" />
     <ClCompile Include="..\Classes\ObjectPools\CoinPickupPool.cpp" />
@@ -184,6 +186,7 @@ xcopy "$(ProjectDir)..\Resources" "$(OutDir)" /D /E /I /F /Y
     <ClInclude Include="..\..\Cocos2dxFramework\CCF_OrthoCamera.h" />
     <ClInclude Include="..\..\Cocos2dxFramework\CCF_PhysicsBodyConfigs.h" />
     <ClInclude Include="..\..\Cocos2dxFramework\CCF_Sprite.h" />
+    <ClInclude Include="..\..\Cocos2dxFramework\CCF_SpriteAnim.h" />
     <ClInclude Include="..\..\Cocos2dxFramework\CCF_SpriteSheet.h" />
     <ClInclude Include="..\..\Cocos2dxFramework\CCF_Utils.h" />
     <ClInclude Include="..\Classes\AppDelegate.h" />
@@ -201,6 +204,7 @@ xcopy "$(ProjectDir)..\Resources" "$(OutDir)" /D /E /I /F /Y
     <ClInclude Include="..\Classes\GameObjects\UpSpeedPickup.h" />
     <ClInclude Include="..\Classes\GameScenes\GameplayScene.h" />
     <ClInclude Include="..\Classes\GameScenes\MainMenuScene.h" />
+    <ClInclude Include="..\Classes\GameScenes\TestScene.h" />
     <ClInclude Include="..\Classes\GameUtils.h" />
     <ClInclude Include="..\Classes\ObjectPools\BackgroundTilePool.h" />
     <ClInclude Include="..\Classes\ObjectPools\CoinPickupPool.h" />

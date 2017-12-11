@@ -6,6 +6,9 @@
 using namespace cocos2d;
 using namespace SlashSave;
 
+#define OBSTACLES_SPAWNING_RATE 2
+#define OBSTACLES_POOL_SIZE 5
+
 bool ObstaclePool::Init(cocos2d::Node* parent)
 {
 	this->schedule(schedule_selector(ObstaclePool::AddAnObstacle), OBSTACLES_SPAWNING_RATE);

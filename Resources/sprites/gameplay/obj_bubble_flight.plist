@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+  <dict>
+    <key>frames</key>
+    <dict>
+      <key>Boundary 0</key>
+      <dict>
+        <key>aliases</key>
+        <array />
+        <key>spriteOffset</key>
+        <string>{0,0}</string>
+        <key>spriteSize</key>
+        <string>{54,67}</string>
+        <key>spriteSourceSize</key>
+        <string>{54,67}</string>
+        <key>textureRect</key>
+        <string>{{2,2},{54,67}}</string>
+        <key>textureRotated</key>
+        <false />
+      </dict>
+      <key>Boundary 4</key>
+      <dict>
+        <key>aliases</key>
+        <array />
+        <key>spriteOffset</key>
+        <string>{0,0}</string>
+        <key>spriteSize</key>
+        <string>{64,58}</string>
+        <key>spriteSourceSize</key>
+        <string>{64,58}</string>
+        <key>textureRect</key>
+        <string>{{66,2},{64,58}}</string>
+        <key>textureRotated</key>
+        <false />
+      </dict>
+      <key>Boundary 8</key>
+      <dict>
+        <key>aliases</key>
+        <array />
+        <key>spriteOffset</key>
+        <string>{0,0}</string>
+        <key>spriteSize</key>
+        <string>{65,57}</string>
+        <key>spriteSourceSize</key>
+        <string>{65,57}</string>
+        <key>textureRect</key>
+        <string>{{137,2},{65,57}}</string>
+        <key>textureRotated</key>
+        <false />
+      </dict>
+      <key>Boundary 12</key>
+      <dict>
+        <key>aliases</key>
+        <array />
+        <key>spriteOffset</key>
+        <string>{0,0}</string>
+        <key>spriteSize</key>
+        <string>{55,66}</string>
+        <key>spriteSourceSize</key>
+        <string>{55,66}</string>
+        <key>textureRect</key>
+        <string>{{205,2},{55,66}}</string>
+        <key>textureRotated</key>
+        <false />
+      </dict>
+      <key>Boundary 9</key>
+      <dict>
+        <key>aliases</key>
+        <array />
+        <key>spriteOffset</key>
+        <string>{0,0}</string>
+        <key>spriteSize</key>
+        <string>{62,59}</string>
+        <key>spriteSourceSize</key>
+        <string>{62,59}</string>
+        <key>textureRect</key>
+        <string>{{137,62},{62,59}}</string>
+        <key>textureRotated</key>
+        <false />
+      </dict>
+      <key>Boundary 5</key>
+      <dict>
+        <key>aliases</key>
+        <array />
+        <key>spriteOffset</key>
+        <string>{0,0}</string>
+        <key>spriteSize</key>
+        <string>{66,56}</string>
+        <key>spriteSourceSize</key>
+        <string>{66,56}</string>
+        <key>textureRect</key>
+        <string>{{66,64},{66,56}}</string>
+        <key>textureRotated</key>
+        <false />
+      </dict>
+      <key>Boundary 1</key>
+      <dict>
+        <key>aliases</key>
+        <array />
+        <key>spriteOffset</key>
+        <string>{0,0}</string>
+        <key>spriteSize</key>
+        <string>{56,66}</string>
+        <key>spriteSourceSize</key>
+        <string>{56,66}</string>
+        <key>textureRect</key>
+        <string>{{2,72},{56,66}}</string>
+        <key>textureRotated</key>
+        <false />
+      </dict>
+      <key>Boundary 13</key>
+      <dict>
+        <key>aliases</key>
+        <array />
+        <key>spriteOffset</key>
+        <string>{0,0}</string>
+        <key>spriteSize</key>
+        <string>{54,67}</string>
+        <key>spriteSourceSize</key>
+        <string>{54,67}</string>
+        <key>textureRect</key>
+        <string>{{205,72},{54,67}}</string>
+        <key>textureRotated</key>
+        <false />
+      </dict>
+      <key>Boundary 6</key>
+      <dict>
+        <key>aliases</key>
+        <array />
+        <key>spriteOffset</key>
+        <string>{0,0}</string>
+        <key>spriteSize</key>
+        <string>{67,54}</string>
+        <key>spriteSourceSize</key>
+        <string>{67,54}</string>
+        <key>textureRect</key>
+        <string>{{66,123},{67,54}}</string>
+        <key>textureRotated</key>
+        <false />
+      </dict>
+      <key>Boundary 10</key>
+      <dict>
+        <key>aliases</key>
+        <array />
+        <key>spriteOffset</key>
+        <string>{0,0}</string>
+        <key>spriteSize</key>
+        <string>{60,62}</string>
+        <key>spriteSourceSize</key>
+        <string>{60,62}</string>
+        <key>textureRect</key>
+        <string>{{137,125},{60,62}}</string>
+        <key>textureRotated</key>
+        <false />
+      </dict>
+      <key>Boundary 2</key>
+      <dict>
+        <key>aliases</key>
+        <array />
+        <key>spriteOffset</key>
+        <string>{0,0}</string>
+        <key>spriteSize</key>
+        <string>{58,64}</string>
+        <key>spriteSourceSize</key>
+        <string>{58,64}</string>
+        <key>textureRect</key>
+        <string>{{2,142},{58,64}}</string>
+        <key>textureRotated</key>
+        <false />
+      </dict>
+      <key>Boundary 7</key>
+      <dict>
+        <key>aliases</key>
+        <array />
+        <key>spriteOffset</key>
+        <string>{0,0}</string>
+        <key>spriteSize</key>
+        <string>{66,55}</string>
+        <key>spriteSourceSize</key>
+        <string>{66,55}</string>
+        <key>textureRect</key>
+        <string>{{66,181},{66,55}}</string>
+        <key>textureRotated</key>
+        <false />
+      </dict>
+      <key>Boundary 11</key>
+      <dict>
+        <key>aliases</key>
+        <array />
+        <key>spriteOffset</key>
+        <string>{0,0}</string>
+        <key>spriteSize</key>
+        <string>{58,64}</string>
+        <key>spriteSourceSize</key>
+        <string>{58,64}</string>
+        <key>textureRect</key>
+        <string>{{137,191},{58,64}}</string>
+        <key>textureRotated</key>
+        <false />
+      </dict>
+      <key>Boundary 3</key>
+      <dict>
+        <key>aliases</key>
+        <array />
+        <key>spriteOffset</key>
+        <string>{0,0}</string>
+        <key>spriteSize</key>
+        <string>{61,61}</string>
+        <key>spriteSourceSize</key>
+        <string>{61,61}</string>
+        <key>textureRect</key>
+        <string>{{2,210},{61,61}}</string>
+        <key>textureRotated</key>
+        <false />
+      </dict>
+    </dict>
+    <key>metadata</key>
+    <dict>
+      <key>format</key>
+      <integer>3</integer>
+      <key>realTextureFileName</key>
+      <string>obj_bubble_flight.png</string>
+      <key>size</key>
+      <string>{264,274}</string>
+      <key>textureFileName</key>
+      <string>obj_bubble_flight.png</string>
+    </dict>
+  </dict>
+</plist>
