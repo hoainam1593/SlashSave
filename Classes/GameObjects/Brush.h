@@ -15,10 +15,15 @@ namespace SlashSave
 
 		bool Init(cocos2d::Node* parent);
 		void update(float dt);
+		void OnMouseDown(cocos2d::Event* evt);
 		void OnMouseMoveWhileLeftBtnPressed(const CCF_Vec2& mousePos);
 
 	private:
+		void AddADot(CCF_Vec2 mousePos);
+
+	private:
 		std::vector<BrushDot*> m_brushDots;
+		std::vector<CCF_Vec2> m_mousePositions;
 	};
 
 }

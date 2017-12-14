@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+    <dict>
+        <key>frames</key>
+        <dict>
+            <key>long obstacle.png</key>
+            <dict>
+                <key>aliases</key>
+                <array/>
+                <key>spriteOffset</key>
+                <string>{0,0}</string>
+                <key>spriteSize</key>
+                <string>{213,105}</string>
+                <key>spriteSourceSize</key>
+                <string>{213,105}</string>
+                <key>textureRect</key>
+                <string>{{0,0},{213,105}}</string>
+                <key>textureRotated</key>
+                <false/>
+            </dict>
+            <key>short obstacle.png</key>
+            <dict>
+                <key>aliases</key>
+                <array/>
+                <key>spriteOffset</key>
+                <string>{0,0}</string>
+                <key>spriteSize</key>
+                <string>{99,105}</string>
+                <key>spriteSourceSize</key>
+                <string>{99,105}</string>
+                <key>textureRect</key>
+                <string>{{213,0},{99,105}}</string>
+                <key>textureRotated</key>
+                <false/>
+            </dict>
+        </dict>
+        <key>metadata</key>
+        <dict>
+            <key>format</key>
+            <integer>3</integer>
+            <key>pixelFormat</key>
+            <string>RGBA8888</string>
+            <key>premultiplyAlpha</key>
+            <false/>
+            <key>realTextureFileName</key>
+            <string>obstacles.png</string>
+            <key>size</key>
+            <string>{312,105}</string>
+            <key>smartupdate</key>
+            <string>$TexturePacker:SmartUpdate:6b3e43b4a9e671a14f61648281fb2fe1:046cc49699de731c562b619dcceb5814:c6007e37134144ce9a034816745e825c$</string>
+            <key>textureFileName</key>
+            <string>obstacles.png</string>
+        </dict>
+    </dict>
+</plist>

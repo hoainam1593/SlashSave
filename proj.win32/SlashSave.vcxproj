@@ -166,8 +166,9 @@ xcopy "$(ProjectDir)..\Resources" "$(OutDir)" /D /E /I /F /Y
     <ClCompile Include="..\Classes\GameObjects\Brush.cpp" />
     <ClCompile Include="..\Classes\GameObjects\BrushDot.cpp" />
     <ClCompile Include="..\Classes\GameObjects\CoinPickup.cpp" />
-    <ClCompile Include="..\Classes\GameObjects\Obstacle.cpp" />
+    <ClCompile Include="..\Classes\GameObjects\LongObstacle.cpp" />
     <ClCompile Include="..\Classes\GameObjects\Player.cpp" />
+    <ClCompile Include="..\Classes\GameObjects\ShortObstacle.cpp" />
     <ClCompile Include="..\Classes\GameObjects\UpSpeedPickup.cpp" />
     <ClCompile Include="..\Classes\GameScenes\GameplayScene.cpp" />
     <ClCompile Include="..\Classes\GameScenes\MainMenuScene.cpp" />
@@ -175,7 +176,8 @@ xcopy "$(ProjectDir)..\Resources" "$(OutDir)" /D /E /I /F /Y
     <ClCompile Include="..\Classes\GameUtils.cpp" />
     <ClCompile Include="..\Classes\ObjectPools\BackgroundTilePool.cpp" />
     <ClCompile Include="..\Classes\ObjectPools\CoinPickupPool.cpp" />
-    <ClCompile Include="..\Classes\ObjectPools\ObstaclePool.cpp" />
+    <ClCompile Include="..\Classes\ObjectPools\LongObstaclePool.cpp" />
+    <ClCompile Include="..\Classes\ObjectPools\ShortObstaclePool.cpp" />
     <ClCompile Include="..\Classes\ObjectPools\UpSpeedPickupPool.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
@@ -199,8 +201,9 @@ xcopy "$(ProjectDir)..\Resources" "$(OutDir)" /D /E /I /F /Y
     <ClInclude Include="..\Classes\GameObjects\Brush.h" />
     <ClInclude Include="..\Classes\GameObjects\BrushDot.h" />
     <ClInclude Include="..\Classes\GameObjects\CoinPickup.h" />
-    <ClInclude Include="..\Classes\GameObjects\Obstacle.h" />
+    <ClInclude Include="..\Classes\GameObjects\LongObstacle.h" />
     <ClInclude Include="..\Classes\GameObjects\Player.h" />
+    <ClInclude Include="..\Classes\GameObjects\ShortObstacle.h" />
     <ClInclude Include="..\Classes\GameObjects\UpSpeedPickup.h" />
     <ClInclude Include="..\Classes\GameScenes\GameplayScene.h" />
     <ClInclude Include="..\Classes\GameScenes\MainMenuScene.h" />
@@ -208,7 +211,8 @@ xcopy "$(ProjectDir)..\Resources" "$(OutDir)" /D /E /I /F /Y
     <ClInclude Include="..\Classes\GameUtils.h" />
     <ClInclude Include="..\Classes\ObjectPools\BackgroundTilePool.h" />
     <ClInclude Include="..\Classes\ObjectPools\CoinPickupPool.h" />
-    <ClInclude Include="..\Classes\ObjectPools\ObstaclePool.h" />
+    <ClInclude Include="..\Classes\ObjectPools\LongObstaclePool.h" />
+    <ClInclude Include="..\Classes\ObjectPools\ShortObstaclePool.h" />
     <ClInclude Include="..\Classes\ObjectPools\UpSpeedPickupPool.h" />
     <ClInclude Include="main.h" />
   </ItemGroup>

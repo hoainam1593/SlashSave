@@ -4,6 +4,8 @@
 using namespace cocos2d;
 using namespace SlashSave;
 
+#define BACKGROUND_TILE_SPRITE_FILE_NAME "sprites/gameplay/background_night.png"
+
 bool BackgroundTile::Init(cocos2d::Node* parent)
 {
 	CCF_Sprite::Init(BACKGROUND_TILE_SPRITE_FILE_NAME, 0, CCF_ANCHOR_CENTER, parent);

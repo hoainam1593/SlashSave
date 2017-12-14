@@ -1,22 +1,21 @@
 
-#include "ObstaclePool.h"
+#include "LongObstaclePool.h"
 #include "CameraGameplay.h"
 #include "GameUtils.h"
 
 using namespace cocos2d;
 using namespace SlashSave;
 
-#define OBSTACLES_SPAWNING_RATE 2
-#define OBSTACLES_POOL_SIZE 5
+#define LONG_OBSTACLES_POOL_SIZE 5
 
-bool ObstaclePool::Init(cocos2d::Node* parent)
+LongObstaclePool* LongObstaclePool::s_instance = nullptr;
+
+bool LongObstaclePool::Init(cocos2d::Node* parent)
 {
-	this->schedule(schedule_selector(ObstaclePool::AddAnObstacle), OBSTACLES_SPAWNING_RATE);
-
-	return CCF_ObjectPool<Obstacle>::Init(GAMEPLAY_LOCAL_Z_GAME_OBJECT, parent, OBSTACLES_POOL_SIZE);
+	return CCF_ObjectPool<LongObstacle>::Init(GAMEPLAY_LOCAL_Z_GAME_OBJECT, parent, LONG_OBSTACLES_POOL_SIZE);
 }
 
-void ObstaclePool::DoAddObject(Obstacle* obj)
+void LongObstaclePool::DoAddObject(LongObstacle* obj)
 {
 	// Calculate position.
 	auto visibleSize = Director::getInstance()->getVisibleSize();
@@ -34,10 +33,6 @@ void ObstaclePool::DoAddObject(Obstacle* obj)
 
 	// Config sprite.
 	obj->SetPosition(CameraGameplay::GetInstance()->ScreenToWorldCoordinate(pos), CCF_ANCHOR_LEFT_BOTTOM);
+	obj->OnAddObject();
 	obj->setVisible(true);
-}
-
-void ObstaclePool::AddAnObstacle(float dt)
-{
-	AddObject();
 }

@@ -54,12 +54,6 @@
     <ClCompile Include="..\Classes\Cameras\CameraGUI.cpp">
       <Filter>src\Cameras</Filter>
     </ClCompile>
-    <ClCompile Include="..\Classes\GameObjects\Obstacle.cpp">
-      <Filter>src\GameObjects</Filter>
-    </ClCompile>
-    <ClCompile Include="..\Classes\ObjectPools\ObstaclePool.cpp">
-      <Filter>src\ObjectPools</Filter>
-    </ClCompile>
     <ClCompile Include="..\Classes\GameObjects\UpSpeedPickup.cpp">
       <Filter>src\GameObjects</Filter>
     </ClCompile>
@@ -117,6 +111,18 @@
     <ClCompile Include="..\..\Cocos2dxFramework\CCF_SpriteAnim.cpp">
       <Filter>src\_framework</Filter>
     </ClCompile>
+    <ClCompile Include="..\Classes\GameObjects\LongObstacle.cpp">
+      <Filter>src\GameObjects</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\GameObjects\ShortObstacle.cpp">
+      <Filter>src\GameObjects</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\ObjectPools\LongObstaclePool.cpp">
+      <Filter>src\ObjectPools</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\ObjectPools\ShortObstaclePool.cpp">
+      <Filter>src\ObjectPools</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="main.h">
@@ -142,12 +148,6 @@
     </ClInclude>
     <ClInclude Include="..\Classes\Cameras\CameraGUI.h">
       <Filter>src\Cameras</Filter>
-    </ClInclude>
-    <ClInclude Include="..\Classes\GameObjects\Obstacle.h">
-      <Filter>src\GameObjects</Filter>
-    </ClInclude>
-    <ClInclude Include="..\Classes\ObjectPools\ObstaclePool.h">
-      <Filter>src\ObjectPools</Filter>
     </ClInclude>
     <ClInclude Include="..\Classes\GameObjects\UpSpeedPickup.h">
       <Filter>src\GameObjects</Filter>
@@ -211,6 +211,18 @@
     </ClInclude>
     <ClInclude Include="..\..\Cocos2dxFramework\CCF_SpriteAnim.h">
       <Filter>src\_framework</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\GameObjects\LongObstacle.h">
+      <Filter>src\GameObjects</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\GameObjects\ShortObstacle.h">
+      <Filter>src\GameObjects</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\ObjectPools\LongObstaclePool.h">
+      <Filter>src\ObjectPools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\ObjectPools\ShortObstaclePool.h">
+      <Filter>src\ObjectPools</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

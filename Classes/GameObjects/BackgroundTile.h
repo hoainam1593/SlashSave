@@ -7,8 +7,6 @@
 namespace SlashSave
 {
 
-#define BACKGROUND_TILE_SPRITE_FILE_NAME "sprites/gameplay/background_day.png"
-
 	class BackgroundTile : public CCF_Sprite
 	{
 	public:
