@@ -25,21 +25,12 @@ static float Interpolate(float t0, float v0, float t1, float v1, float t2, float
 
 #pragma region Core
 
-Player* Player::GetInstance()
-{
-	return s_instance;
-}
-
-Player::Player()
-	: m_upSpeedTime(-1),
-	m_travelledDist(0),
-	m_nCoins(0)
-{
-	s_instance = this;
-}
-
 bool Player::Init(cocos2d::Node* parent)
 {
+	m_upSpeedTime = -1;
+	m_travelledDist = 0;
+	m_nCoins = 0;
+
 	// Init sprite.
 	{
 		vector<CCF_String> frameNames = { PLAYER_FRAME_NAME };
@@ -49,10 +40,12 @@ bool Player::Init(cocos2d::Node* parent)
 	}
 
 	// Config sprite.
-	auto mat = PhysicsMaterial(0, PLAYER_BOUNCING_AMOUNT, 0);
-	SetPosition(CCF_Vec2(0, 0), CCF_ANCHOR_CENTER);
-	CreateCircleBody(PLAYER_BODY_RADIUS, true, &mat, PLAYER_MAX_MOVE_SPEED, GAME_OBJECT_TAG_PLAYER);
-
+	{
+		auto mat = PhysicsMaterial(0, PLAYER_BOUNCING_AMOUNT, 0);
+		SetPosition(CCF_Vec2(0, 0), CCF_ANCHOR_CENTER);
+		CreateCircleBody(PLAYER_BODY_RADIUS, true, &mat, PLAYER_MAX_MOVE_SPEED, GAME_OBJECT_TAG_PLAYER);
+	}
+	
 	m_prevPos = getPosition();
 
 	return true;
@@ -150,6 +143,7 @@ bool Player::OnCollideWith(cocos2d::PhysicsBody* other)
 
 void Player::OnEndGame()
 {
+	// Show end game popup.
 	GameplayScene::GetInstance()->EndGame();
 }
 

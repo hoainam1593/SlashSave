@@ -7,12 +7,6 @@
 namespace SlashSave
 {
 
-#define HUD_TEXT_SIZE 20
-#define HUD_TEXT_COLOR CCF_Color(255, 215, 0)
-#define HUD_TEXT_FONT_NAME "fonts/Marker Felt.ttf"
-#define HUD_SCREEN_PADDING 20
-#define HUD_UPDATE_TEXT_FREQUENCY 0.5f
-
 	class HUDLayer : public cocos2d::LayerColor
 	{
 	private:

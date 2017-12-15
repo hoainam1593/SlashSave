@@ -9,13 +9,12 @@ namespace SlashSave
 
 	class Player : public CCF_Sprite
 	{
+		CCF_GET_INSTANCE_FUNC(Player)
+
 	public:
 		CCF_GAME_OBJECT_CREATE_FUNC(Player)
 
 		// Core.
-		static Player* GetInstance();
-
-		Player();
 		bool Init(cocos2d::Node* parent);
 		void update(float dt);
 
@@ -32,8 +31,6 @@ namespace SlashSave
 		void OnGetCoinPickup();
 
 	private:
-		static Player* s_instance;
-
 		float m_upSpeedTime;
 		CCF_Vec2 m_prevPos;
 		float m_travelledDist;
