@@ -2,24 +2,35 @@
 #ifndef __GAME_END_LAYER_H__
 #define __GAME_END_LAYER_H__
 
-#include "CCF_Utils.h"
+#include "CCF_Label.h"
 
 namespace SlashSave
 {
 
-#define GAME_END_POPUP_BACKGROUND_COLOR CCF_ColorA(0, 0, 0, 200)
-#define GAME_END_POPUP_TEXT_SIZE 30
-#define GAME_END_POPUP_TEXT_COLOR CCF_Color(255, 215, 0)
-#define GAME_END_POPUP_TEXT_FONT_NAME "fonts/Marker Felt.ttf"
-
 	class GameEndLayer : public cocos2d::LayerColor
 	{
+	private:
+		enum
+		{
+			LABEL_COINS,
+			LABEL_DISTANCE,
+			NUMBER_LABELS
+		};
+
 	public:
 		CREATE_FUNC(GameEndLayer)
 		virtual bool init();
+		virtual void setVisible(bool visible);
+
+		void OnRestartClicked(cocos2d::Ref* sender);
+		void OnMainMenuClicked(cocos2d::Ref* sender);
 
 	private:
 		void InitGUIWidgets();
+
+	private:
+		CCF_Label* m_labels[NUMBER_LABELS];
+		bool m_isSetValue;
 	};
 }
 

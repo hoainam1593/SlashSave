@@ -10,6 +10,10 @@ namespace SlashSave
 #define OBSTACLES_FRAME_NAMES_SHORT_OBSTACLE "short obstacle.png"
 #define OBSTACLES_FRAME_NAMES_LONG_OBSTACLE "long obstacle.png"
 
+#define OBSTACLES_SPRITE_FILE_NAME "sprites/gameplay/obstacles.png"
+#define OBSTACLES_PLIST_FILE_NAME "sprites/gameplay/obstacles.plist"
+#define OBSTACLES_FRAME_NAMES {OBSTACLES_FRAME_NAMES_SHORT_OBSTACLE, OBSTACLES_FRAME_NAMES_LONG_OBSTACLE}
+
 	class ShortObstacle : public CCF_Sprite
 	{
 	public:

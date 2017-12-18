@@ -6,9 +6,7 @@
 
 using namespace cocos2d;
 using namespace SlashSave;
-
-extern CCF_SpriteSheet* g_obstaclesSheet;
-extern void InitObstaclesSheet();
+using namespace std;
 
 #define LONG_OBSTACLE_BODY_WIDTH 139
 #define LONG_OBSTACLE_BODY_HEIGHT 68
@@ -22,9 +20,10 @@ bool LongObstacle::Init(cocos2d::Node* parent)
 {
 	m_totalTime = 0;
 
-	InitObstaclesSheet();
+	vector<CCF_String> names = OBSTACLES_FRAME_NAMES;
+	auto sheet = CCF_SpriteSheet::Create(OBSTACLES_SPRITE_FILE_NAME, OBSTACLES_PLIST_FILE_NAME, names, 0, nullptr);
 
-	CCF_Sprite::Init(g_obstaclesSheet, OBSTACLES_FRAME_NAMES_LONG_OBSTACLE, 0, CCF_ANCHOR_CENTER, parent);
+	CCF_Sprite::Init(sheet, OBSTACLES_FRAME_NAMES_LONG_OBSTACLE, 0, CCF_ANCHOR_CENTER, parent);
 	CreateRectangleBody(LONG_OBSTACLE_BODY_WIDTH, LONG_OBSTACLE_BODY_HEIGHT, false, nullptr, -1, GAME_OBJECT_TAG_OBSTACLE);
 
 	return true;

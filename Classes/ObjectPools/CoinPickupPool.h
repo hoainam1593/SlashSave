@@ -8,9 +8,6 @@
 namespace SlashSave
 {
 
-#define COIN_PICKUP_SPAWNING_RATE 2
-#define COIN_PICKUP_POOL_SIZE 5
-
 	class CoinPickupPool : public CCF_ObjectPool<CoinPickup>
 	{
 	public:

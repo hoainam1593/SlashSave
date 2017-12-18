@@ -13,13 +13,6 @@ using namespace std;
 #define HUD_TEXT_FONT_NAME "fonts/Marker Felt.ttf"
 #define HUD_UPDATE_TEXT_FREQUENCY 0.5f
 
-#define HUD_SPRITE_FILE_NAME "sprites/gui/hud.png"
-#define HUD_PLIST_FILE_NAME "sprites/gui/hud.plist"
-#define HUD_FRAME_NAME_EMPTY "empty.png"
-#define HUD_FRAME_NAME_COINS_ICON "coins.png"
-#define HUD_FRAME_NAME_DIST_ICON "dist.png"
-#define HUD_FRAME_NAMES {HUD_FRAME_NAME_EMPTY, HUD_FRAME_NAME_COINS_ICON, HUD_FRAME_NAME_DIST_ICON}
-
 #define HUD_BACKGROUND_Z_ORDER 0
 #define HUD_FOREGROUND_Z_ORDER 1
 

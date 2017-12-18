@@ -7,6 +7,14 @@
 namespace SlashSave
 {
 
+#define HUD_FRAME_NAME_EMPTY "empty.png"
+#define HUD_FRAME_NAME_COINS_ICON "coins.png"
+#define HUD_FRAME_NAME_DIST_ICON "dist.png"
+
+#define HUD_SPRITE_FILE_NAME "sprites/gui/hud.png"
+#define HUD_PLIST_FILE_NAME "sprites/gui/hud.plist"
+#define HUD_FRAME_NAMES {HUD_FRAME_NAME_EMPTY, HUD_FRAME_NAME_COINS_ICON, HUD_FRAME_NAME_DIST_ICON}
+
 	class HUDLayer : public cocos2d::LayerColor
 	{
 	private:

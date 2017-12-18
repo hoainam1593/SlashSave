@@ -6,6 +6,9 @@
 using namespace cocos2d;
 using namespace SlashSave;
 
+#define COIN_PICKUP_SPAWNING_RATE 2
+#define COIN_PICKUP_POOL_SIZE 5
+
 bool CoinPickupPool::Init(cocos2d::Node* parent)
 {
 	this->schedule(schedule_selector(CoinPickupPool::AddAPickup), COIN_PICKUP_SPAWNING_RATE);

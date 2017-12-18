@@ -28,6 +28,9 @@
     <Filter Include="src\GameScenes">
       <UniqueIdentifier>{0b0a1249-11a4-4ce5-a6b2-ed042af5c96a}</UniqueIdentifier>
     </Filter>
+    <Filter Include="src\GUI">
+      <UniqueIdentifier>{de32b8e2-15e7-4a2e-b1af-eafe7c0fb0f7}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -122,6 +125,12 @@
     </ClCompile>
     <ClCompile Include="..\Classes\ObjectPools\ShortObstaclePool.cpp">
       <Filter>src\ObjectPools</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Cocos2dxFramework\CCF_Button.cpp">
+      <Filter>src\_framework</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\GUI\BubbleButton.cpp">
+      <Filter>src\GUI</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -223,6 +232,12 @@
     </ClInclude>
     <ClInclude Include="..\Classes\ObjectPools\ShortObstaclePool.h">
       <Filter>src\ObjectPools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Cocos2dxFramework\CCF_Button.h">
+      <Filter>src\_framework</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\GUI\BubbleButton.h">
+      <Filter>src\GUI</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

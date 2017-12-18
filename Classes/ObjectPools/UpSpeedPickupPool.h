@@ -8,9 +8,6 @@
 namespace SlashSave
 {
 
-#define UP_SPEED_PICKUP_SPAWNING_RATE 2
-#define UP_SPEED_PICKUP_POOL_SIZE 5
-
 	class UpSpeedPickupPool : public CCF_ObjectPool<UpSpeedPickup>
 	{
 	public:

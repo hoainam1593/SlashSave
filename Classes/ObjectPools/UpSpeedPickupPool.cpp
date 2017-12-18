@@ -6,6 +6,9 @@
 using namespace cocos2d;
 using namespace SlashSave;
 
+#define UP_SPEED_PICKUP_SPAWNING_RATE 5
+#define UP_SPEED_PICKUP_POOL_SIZE 3
+
 bool UpSpeedPickupPool::Init(cocos2d::Node* parent)
 {
 	this->schedule(schedule_selector(UpSpeedPickupPool::AddAPickup), UP_SPEED_PICKUP_SPAWNING_RATE);

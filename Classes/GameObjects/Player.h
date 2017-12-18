@@ -35,6 +35,7 @@ namespace SlashSave
 		CCF_Vec2 m_prevPos;
 		float m_travelledDist;
 		int m_nCoins;
+		bool m_isEndGame;
 	};
 
 }

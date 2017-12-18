@@ -2,6 +2,7 @@
 #include "MainMenuScene.h"
 #include "GameplayScene.h"
 #include "CCF_SpriteSheet.h"
+#include "BubbleButton.h"
 
 using namespace cocos2d;
 using namespace SlashSave;
@@ -11,8 +12,6 @@ using namespace std;
 
 #define MAIN_MENU_BACKGROUND_IMAGE "sprites/gui/bgMain0.jpg"
 #define MAIN_MENU_FLARE_IMAGE "sprites/gui/flare.png"
-#define MAIN_MENU_BUTTONS_SPRITE_SHEET "sprites/gui/uiButs.png"
-#define MAIN_MENU_BUTTONS_PLIST_FILE "sprites/gui/uiButs.plist"
 #define MAIN_MENU_HEX_BALLS_SPRITE_SHEET "sprites/gui/gameElements.png"
 #define MAIN_MENU_HEX_BALLS_PLIST_FILE "sprites/gui/gameElements.plist"
 
@@ -22,8 +21,6 @@ using namespace std;
 #define MAIN_MENU_BUTTONS_Z_ORDER 3
 
 #define MAIN_MENU_FLARE_ROT_SPEEDS {10, -30, 40}
-#define MAIN_MENU_BUTTON_SCALE_INTENSITY 0.02f
-#define MAIN_MENU_BUTTON_SCALE_FREQUENCY 8.0f
 
 #define MAIN_MENU_HEX_BALL_MIN_DROP_SPEED 80.0f
 #define MAIN_MENU_HEX_BALL_MAX_DROP_SPEED 150.0f
@@ -31,35 +28,6 @@ using namespace std;
 #define MAIN_MENU_HEX_BALL_MAX_ROT_SPEED 40.0f
 #define MAIN_MENU_HEX_BALL_MIN_SCALE 0.5f
 #define MAIN_MENU_HEX_BALL_MAX_SCALE 0.8f
-
-#define MAIN_MENU_FRAME_NAME_GAME_ICON "game icon"
-#define MAIN_MENU_FRAME_NAME_REFRESH_BUTTON "refresh button"
-#define MAIN_MENU_FRAME_NAME_MUTE_BUTTON "mute button"
-#define MAIN_MENU_FRAME_NAME_SOUND_BUTTON "sound button"
-#define MAIN_MENU_FRAME_NAME_BACK_BUTTON "back button"
-#define MAIN_MENU_FRAME_NAME_INFO_BUTTON "info button"
-#define MAIN_MENU_FRAME_NAME_PLAY_1_BUTTON "play button 1"
-#define MAIN_MENU_FRAME_NAME_PLAY_2_BUTTON "play button 2"
-#define MAIN_MENU_FRAME_NAME_PLAY_3_BUTTON "play button 3"
-#define MAIN_MENU_FRAME_NAME_EXIT_BUTTON "exit button"
-#define MAIN_MENU_FRAME_NAME_PAUSE_BUTTON "pause button"
-#define MAIN_MENU_FRAME_NAME_EXCHANGE_BUTTON "exchange button"
-
-#define MAIN_MENU_BUTTONS_FRAME_NAMES \
-{ \
-	MAIN_MENU_FRAME_NAME_GAME_ICON, \
-	MAIN_MENU_FRAME_NAME_REFRESH_BUTTON, \
-	MAIN_MENU_FRAME_NAME_MUTE_BUTTON, \
-	MAIN_MENU_FRAME_NAME_SOUND_BUTTON, \
-	MAIN_MENU_FRAME_NAME_BACK_BUTTON, \
-	MAIN_MENU_FRAME_NAME_INFO_BUTTON, \
-	MAIN_MENU_FRAME_NAME_PLAY_1_BUTTON, \
-	MAIN_MENU_FRAME_NAME_PLAY_2_BUTTON, \
-	MAIN_MENU_FRAME_NAME_PLAY_3_BUTTON, \
-	MAIN_MENU_FRAME_NAME_EXIT_BUTTON, \
-	MAIN_MENU_FRAME_NAME_PAUSE_BUTTON, \
-	MAIN_MENU_FRAME_NAME_EXCHANGE_BUTTON \
-}
 
 #define MAIN_MENU_HEX_BALLS_FRAME_NAMES \
 { \
@@ -169,51 +137,6 @@ private:
 
 #pragma endregion
 
-#pragma region Button item
-
-class ButtonItem : public MenuItemSprite
-{
-public:
-	CREATE_FUNC(ButtonItem)
-	static ButtonItem* Create(CCF_Sprite* sprite, const ccMenuCallback& callback)
-	{
-		auto pRet = ButtonItem::create();
-
-		pRet->initWithNormalSprite(sprite, sprite, sprite, callback);
-
-		return pRet;
-	}
-
-	bool init()
-	{
-		m_totalTime = 0;
-		m_originalScale = CCF_Vec2(getScaleX(), getScaleY());
-
-		this->scheduleUpdate();
-
-		return MenuItemSprite::init();
-	}
-
-	void update(float dt)
-	{
-		m_totalTime += dt;
-
-		auto t = sinf(m_totalTime * MAIN_MENU_BUTTON_SCALE_FREQUENCY) * MAIN_MENU_BUTTON_SCALE_INTENSITY;
-
-		auto scale = m_originalScale.x + t;
-		setScaleX(scale);
-
-		scale = m_originalScale.y - t;
-		setScaleY(scale);
-	}
-
-private:
-	float m_totalTime;
-	CCF_Vec2 m_originalScale;
-};
-
-#pragma endregion
-
 bool MainMenuScene::init()
 {
 	if (!Scene::init())
@@ -242,8 +165,6 @@ void MainMenuScene::OnPlayClicked(cocos2d::Ref* sender)
 
 void MainMenuScene::InitGUIWidgets()
 {
-	auto visibleSize = Director::getInstance()->getVisibleSize();
-
 	// Background.
 	{
 		auto sprite = CCF_Sprite::Create(MAIN_MENU_BACKGROUND_IMAGE, MAIN_MENU_BACKGROUND_Z_ORDER, CCF_ANCHOR_CENTER, this);
@@ -279,19 +200,10 @@ void MainMenuScene::InitGUIWidgets()
 	// Buttons.
 	{
 		vector<CCF_String> frameNames = MAIN_MENU_BUTTONS_FRAME_NAMES;
+		CCF_SpriteSheet* sheet = CCF_SpriteSheet::Create(MAIN_MENU_BUTTONS_SPRITE_SHEET, MAIN_MENU_BUTTONS_PLIST_FILE, frameNames, 0, nullptr);
+		auto sprite = CCF_Sprite::Create(sheet, MAIN_MENU_FRAME_NAME_PLAY_1_BUTTON, 0, CCF_ANCHOR_CENTER, nullptr);
+		auto button = BubbleButton::Create(sprite, CC_CALLBACK_1(MainMenuScene::OnPlayClicked, this), MAIN_MENU_BUTTONS_Z_ORDER, this);
 
-		auto spriteSheet = CCF_SpriteSheet::Create(MAIN_MENU_BUTTONS_SPRITE_SHEET, MAIN_MENU_BUTTONS_PLIST_FILE, frameNames, 0, nullptr);
-		auto menu = Menu::create();
-
-		// Play button.
-		{
-			auto sprite = spriteSheet->CloneFrame(MAIN_MENU_FRAME_NAME_PLAY_1_BUTTON, 0, false);
-			auto item = ButtonItem::Create(sprite, CC_CALLBACK_1(MainMenuScene::OnPlayClicked, this));
-
-			menu->addChild(item);
-		}
-
-		menu->setPosition(CCF_Vec2(visibleSize.width / 2.0f, visibleSize.height / 2.0f));
-		this->addChild(menu, MAIN_MENU_BUTTONS_Z_ORDER);
+		button->SetPosition(CCF_Vec2(0, 0), CCF_ANCHOR_CENTER);
 	}
 }

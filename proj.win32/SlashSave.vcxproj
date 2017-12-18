@@ -67,11 +67,12 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LibraryPath>$(MSBuildProgramFiles32)\Microsoft SDKs\Windows\v7.1A\lib;$(LibraryPath)</LibraryPath>
-    <IncludePath>../../Cocos2dxFramework;../Classes/GameObjects;../Classes/GameLayers;../Classes/Cameras;../Classes/ObjectPools;../Classes/GameScenes;$(IncludePath)</IncludePath>
+    <IncludePath>../../Cocos2dxFramework;../Classes/GameObjects;../Classes/GameLayers;../Classes/Cameras;../Classes/ObjectPools;../Classes/GameScenes;../../Cocos2dxFramework;../Classes/GameObjects;../Classes/GameLayers;../Classes/Cameras;../Classes/ObjectPools;../Classes/GameScenes;$(IncludePath);../Classes/GUI</IncludePath>
     <TargetName>_$(ProjectName)</TargetName>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LibraryPath>$(MSBuildProgramFiles32)\Microsoft SDKs\Windows\v7.1A\lib;$(LibraryPath)</LibraryPath>
+    <IncludePath>../../Cocos2dxFramework;../Classes/GameObjects;../Classes/GameLayers;../Classes/Cameras;../Classes/ObjectPools;../Classes/GameScenes;$(VC_IncludePath);$(WindowsSDK_IncludePath);;../Classes/GUI</IncludePath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -149,6 +150,7 @@ xcopy "$(ProjectDir)..\Resources" "$(OutDir)" /D /E /I /F /Y
     </PreLinkEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="..\..\Cocos2dxFramework\CCF_Button.cpp" />
     <ClCompile Include="..\..\Cocos2dxFramework\CCF_GameObject.cpp" />
     <ClCompile Include="..\..\Cocos2dxFramework\CCF_Label.cpp" />
     <ClCompile Include="..\..\Cocos2dxFramework\CCF_OrthoCamera.cpp" />
@@ -174,6 +176,7 @@ xcopy "$(ProjectDir)..\Resources" "$(OutDir)" /D /E /I /F /Y
     <ClCompile Include="..\Classes\GameScenes\MainMenuScene.cpp" />
     <ClCompile Include="..\Classes\GameScenes\TestScene.cpp" />
     <ClCompile Include="..\Classes\GameUtils.cpp" />
+    <ClCompile Include="..\Classes\GUI\BubbleButton.cpp" />
     <ClCompile Include="..\Classes\ObjectPools\BackgroundTilePool.cpp" />
     <ClCompile Include="..\Classes\ObjectPools\CoinPickupPool.cpp" />
     <ClCompile Include="..\Classes\ObjectPools\LongObstaclePool.cpp" />
@@ -182,6 +185,7 @@ xcopy "$(ProjectDir)..\Resources" "$(OutDir)" /D /E /I /F /Y
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\..\Cocos2dxFramework\CCF_Button.h" />
     <ClInclude Include="..\..\Cocos2dxFramework\CCF_GameObject.h" />
     <ClInclude Include="..\..\Cocos2dxFramework\CCF_Label.h" />
     <ClInclude Include="..\..\Cocos2dxFramework\CCF_ObjectPool.h" />
@@ -209,6 +213,7 @@ xcopy "$(ProjectDir)..\Resources" "$(OutDir)" /D /E /I /F /Y
     <ClInclude Include="..\Classes\GameScenes\MainMenuScene.h" />
     <ClInclude Include="..\Classes\GameScenes\TestScene.h" />
     <ClInclude Include="..\Classes\GameUtils.h" />
+    <ClInclude Include="..\Classes\GUI\BubbleButton.h" />
     <ClInclude Include="..\Classes\ObjectPools\BackgroundTilePool.h" />
     <ClInclude Include="..\Classes\ObjectPools\CoinPickupPool.h" />
     <ClInclude Include="..\Classes\ObjectPools\LongObstaclePool.h" />

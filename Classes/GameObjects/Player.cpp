@@ -30,6 +30,7 @@ bool Player::Init(cocos2d::Node* parent)
 	m_upSpeedTime = -1;
 	m_travelledDist = 0;
 	m_nCoins = 0;
+	m_isEndGame = false;
 
 	// Init sprite.
 	{
@@ -54,6 +55,11 @@ bool Player::Init(cocos2d::Node* parent)
 void Player::update(float dt)
 {
 	CCF_Sprite::update(dt);
+
+	if (m_isEndGame)
+	{
+		return;
+	}
 
 	// Check if player within screen.
 	if (!IsInScreen(getPosition()))
@@ -143,6 +149,8 @@ bool Player::OnCollideWith(cocos2d::PhysicsBody* other)
 
 void Player::OnEndGame()
 {
+	m_isEndGame = true;
+
 	// Show end game popup.
 	GameplayScene::GetInstance()->EndGame();
 }

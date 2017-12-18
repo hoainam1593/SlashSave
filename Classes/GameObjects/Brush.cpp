@@ -6,7 +6,7 @@
 using namespace cocos2d;
 using namespace SlashSave;
 
-#define BRUSH_DOTS_MIN_DISTANCE 20.0f
+#define BRUSH_DOTS_MIN_DISTANCE 15.0f
 
 bool Brush::Init(cocos2d::Node* parent)
 {
